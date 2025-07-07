@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagsil Midterm</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <!--logo-->
+        <div class="logo">
+            <label>
+                Lei's Cookie House
+            </label>
+        </div>
+        <!--navigation-->
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation" data-visible="false">
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#menu">
+                    <li>Menu</li>
+                </a>
+                <a href="#cart">
+                    <li>Cart</li>
+                </a>
+                <!-- <a href="#footer">
+                    <li>Contact</li>
+                </a> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <img class="hero-image" src="img/featured-cookie.jpg" alt="freshly-baked-cookies" height="400px">
+        <div class="hero-section-content">
+            <h1>Freshly Baked with love</h1>
+            <a href="#menu">
+                <button class="go-to-menu-btn">
+                    Browse Our Menu
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="menu-section" id="menu">
+        <h1>Browse our Menu</h1>
+        <table class="menu-layout">
+            <tr>
+                <td>
+                    <img class="product-image" src="img/cheesy-puto.jpg" alt="cheesy puto">
+                    <div class="menu-card-container">
+                        <div class="menu-content">
+                            <p class="item-name">Cheesy Puto</p>
+                            <p class="item-price">Php 70 / 3 pcs</p>
+                        </div>
+                        <div class="menu-add-to-cart">
+                            <img src="img/add-to-cart-icon.png" alt="add to cart icon" height="20px">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <img class="product-image" src="img/chocolate-chip-cookies.jpg" alt="chocolate chip cookies">
+                    <div class="menu-card-container">
+                        <div class="menu-content">
+                            <p class="item-name">Chocolate Chip Cookies</p>
+                            <p class="item-price">Php 115 / 5 pcs</p>
+                        </div>
+                        <div class="menu-add-to-cart">
+                            <img src="img/add-to-cart-icon.png" alt="add to cart icon" height="20px">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <img class="product-image" src="img/cookie-cheesecake.jpg" alt="cookie cheesecake">
+                    <div class="menu-card-container">
+                        <div class="menu-content">
+                            <p class="item-name">Cookie Cheesecake</p>
+                            <p class="item-price">Php 90 / 3 pcs</p>
+                        </div>
+                        <div class="menu-add-to-cart">
+                            <img src="img/add-to-cart-icon.png" alt="add to cart icon" height="20px">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="product-image" src="img/cupcake.jpg" alt="cupcake">
+                    <div class="menu-card-container">
+                        <div class="menu-content">
+                            <p class="item-name">Cupcakes</p>
+                            <p class="item-price">Php 90 / 3 pcs</p>
+                        </div>
+                        <div class="menu-add-to-cart">
+                            <img src="img/add-to-cart-icon.png" alt="add to cart icon" height="20px">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <img class="product-image" src="img/leche-flan.jpg" alt="leche flan">
+                    <div class="menu-card-container">
+                        <div class="menu-content">
+                            <p class="item-name">Leche Flan</p>
+                            <p class="item-price">Php 75 / 1 tub</p>
+                        </div>
+                        <div class="menu-add-to-cart">
+                            <img src="img/add-to-cart-icon.png" alt="add to cart icon" height="20px">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <img class="product-image" src="img/macaroons.jpg" alt="macaroons">
+                    <div class="menu-card-container">
+                        <div class="menu-content">
+                            <p class="item-name">Macaroons</p>
+                            <p class="item-price">Php 150 / 6 pcs</p>
+                        </div>
+                        <div class="menu-add-to-cart">
+                            <img src="img/add-to-cart-icon.png" alt="add to cart icon" height="20px">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section class="cart-section" id="cart">
+        <h1>My Cart</h1>
+        <div class="dynamic-cart">
+            <p>Your cart is empty.</p>
+            <!--food items will dynamically display here-->
+            <!--insert total amount here-->
+        </div>
+        <button type="button" id="purchase-btn">Purchase</button>
+    </section>
+
+    <!-- <footer id="footer">
+        <div class="footer-cta">
+            <h2>Want to be informed of our latest deals?</h2>
+            <div class="email-input">
+                <input type="email" id="email" name="email">
+                <button class="subscribe-btn">Subscribe Now!</button>
+            </div>
+        </div>
+        <div class="soc-med-icons" id="soc-med-icons">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.104,4,24,4z M22.689,13.474 c-0.13,0.012-0.261,0.02-0.393,0.02c-1.495,0-2.809-0.768-3.574-1.931c0,3.049,0,6.519,0,6.577c0,2.685-2.177,4.861-4.861,4.861 C11.177,23,9,20.823,9,18.139c0-2.685,2.177-4.861,4.861-4.861c0.102,0,0.201,0.009,0.3,0.015v2.396c-0.1-0.012-0.197-0.03-0.3-0.03 c-1.37,0-2.481,1.111-2.481,2.481s1.11,2.481,2.481,2.481c1.371,0,2.581-1.08,2.581-2.45c0-0.055,0.024-11.17,0.024-11.17h2.289 c0.215,2.047,1.868,3.663,3.934,3.811V13.474z"></path>
+            </svg>
+        </div>
+        <small id="copyright">&copy; Copyright 2025, Lei's Cookie House | Leanne Dagsil</small>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>

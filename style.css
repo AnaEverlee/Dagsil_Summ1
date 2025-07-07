@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sue+Ellen+Francisco&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+:root {
+    --pink: #FFBFC5;
+    --brown: #060505;
+    --dark-green: #969266;
+    --light-green: #CCC89A;
+
+    --heading-text-font: 'Sue Ellen Francisco', cursive;
+    --heading-text-size: 42px;
+
+    --normal-text-font: 'Montserrat', sans-serif;
+    --normal-text-size: 18px;
+}
+
+section {
+    font-family: var(--normal-text-font);
+}
+
+header {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+
+    background-color: var(--pink);
+    border-bottom: 2px solid var(--brown);
+}
+
+hr {
+    border-bottom: 2px solid var(--brown);
+}
+
+.logo {
+    font-family: var(--heading-text-font);
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 12px;
+    gap: 2em;
+    font-weight: bold;
+    font-family: var(--normal-text-font);
+    font-size: var(--normal-text-size);
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+    padding: 40px 0;
+}
+
+.hero-image {
+    border-radius: 8px;
+}
+
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-content h1 {
+    font-family: var(--heading-text-font);
+    font-size: 40px;
+}
+
+.go-to-menu-btn, #purchase-btn {
+    cursor: pointer;
+    font-family: var(--normal-text-font);
+    border-radius: 25px;
+    border: 2px solid var(--brown);
+    padding: 15px 25px;
+    font-weight: bold;
+
+    background-color: var(--dark-green);
+    color: white;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+td {
+    border: 2px solid var(--brown);
+}
+
+.product-image {
+    width: 340px;
+    height: 275px;
+}
+
+.menu-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 2px solid var(--brown);
+    background-color: var(--dark-green);
+    padding: 15px;
+    color: white;
+}
+
+.menu-content {
+    line-height: 32px;
+}
+
+.menu-add-to-cart {
+    cursor: pointer;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: var(--heading-text-font);
+    font-size: var(--heading-text-size);
+}
+
+.dynamic-cart {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    gap: 3em;
+}
+
+.cart-item {
+    width: 300px;
+    height: 200px;
+    padding: 35px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--brown);
+    background-color: var(--pink);
+}
+
+#purchase-btn {
+    visibility: hidden;
+}
+
+.dynamic-cart {
+    margin-top: 20px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.dynamic-cart ul {
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    padding: 0;
+}
+
+.dynamic-cart ul li {
+    background-color: var(--pink);
+    border: 2px solid var(--brown);
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-bottom: 10px;
+    font-family: var(--normal-text-font);
+    font-size: 18px;
+    color: var(--brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dynamic-cart ul li span {
+    flex: 1 1 auto;
+}
+
+.qty-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qty-controls button {
+    background-color: var(--dark-green);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    transition: background-color 0.3s ease;
+}
+
+.qty-controls button:hover {
+    background-color: var(--brown);
+}
+
+.qty-controls .quantity {
+    font-weight: bold;
+    font-size: 18px;
+    width: 25px;
+    text-align: center;
+}
+
+.price-to-pay {
+    max-width: 600px;
+    background-color: var(--pink);
+    border: 2px solid var(--brown);
+    border-radius: 15px;
+    padding: 20px 25px;
+    font-family: var(--normal-text-font);
+    font-size: 20px;
+    color: var(--brown);
+    text-align: right;
+    line-height: 1.6;
+}
+
+.price-to-pay p {
+    margin-bottom: 8px;
+}
+
+.price-to-pay p strong {
+    font-size: 22px;
+}
+
+
+#purchase-btn {
+    visibility: visible;
+    margin: 30px auto;
+    display: block;
+    font-size: 18px;
+    padding: 15px 40px;
+    max-width: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark-green);
+    border-top: 2px solid var(--brown);
+    height: 300px;
+    padding: 50px;
+    line-height: 50px;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-cta {
+    flex: 1 1 auto;
+}
+
+.soc-med-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+}
+
+footer h2 {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-family: var(--normal-text-font);
+}
+
+#email, .subscribe-btn {
+    font-family: var(--normal-text-font);
+    font-size: 15px;
+    height: 40px;
+}
+
+#email {
+    width: 250px;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.subscribe-btn {
+    background-color: var(--brown);
+    color: white;
+    width: 160px;
+    border: 0;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--pink);
+    color: var(--brown);
+}
+
+.email-input {
+    display: flex;
+    gap: 0;
+    width: fit-content;
+    border: 1px solid var(--brown);
+}
+
+.soc-med-icons > * {
+    margin-top: 15px;
+    width: 42px;
+    height: 42px;
+    fill: white;
+    cursor: pointer;
+}
+
+.soc-med-icons > *:hover {
+    fill: var(--pink);
+}
+
+footer small {
+    position: absolute;
+
+    margin-top: 230px;
+    left: 600px;
+    text-align: center;
+    font-family: var(--normal-text-font);
+    color: white;
+    opacity: 0.7;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #cart, #cart * {
+        visibility: visible;
+    }
+
+    #cart {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white;
+        color: black;
+    }
+
+    header, footer {
+        display: none !important;
+    }
+
+    #purchase-btn {
+        visibility: hidden;
+    }
+}
